@@ -12,4 +12,7 @@ admin_removed <- subset(appended_dataframe, role != "organisation_admin")
 
 # remove access columns
 columns_to_keep <- c("learner_id", "enrolled_at", "role", "country", "detected_country")
-df_learners <- subset(admin_removed, select = columns_to_keep)
+df_learners <- subset(admin_removed, select = columns_to_keep) # 37257
+
+#remove duplicate learners across entire data frame
+df_learners_no_duplicates <- df_learners[!duplicated(df_learners$learner_id), ] #2052

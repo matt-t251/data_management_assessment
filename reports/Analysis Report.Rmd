@@ -10,10 +10,18 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```
 
-```{r LoadPT, include=FALSE}
+```{r Load project template, include=FALSE}
 library(ProjectTemplate)
 load.project()
 ```
 
 # Business Analysis
  i am talking about business stuff
+ 
+ here is a bar chart:
+ 
+```{r load graph}
+source("src/1st_CRISPR.R")
+
+```
+ 
