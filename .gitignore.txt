@@ -1,4 +1,8 @@
 ### R ###
+
+# graphs
+\graphs
+
 # History files
 .Rhistory
 .Rapp.history
