@@ -2,7 +2,8 @@
 title: "Analysis Report"
 author: "Matthew"
 date: "2023-10-30"
-output: html_document
+output: pdf_document
+        
 ---
 
 ```{r setup, include=FALSE}
@@ -13,15 +14,16 @@ knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```{r Load project template, include=FALSE}
 library(ProjectTemplate)
 load.project()
+library(tidyverse)
 ```
 
 # Business Analysis
- i am talking about business stuff
+i am talking about business stuff...
  
- here is a bar chart:
- 
-```{r load graph}
-source("src/1st_CRISPR.R")
+here is a bar chart:
 
-```
- 
+![Alt text](H:/Documents/FutureLearn/graphs/BarChartofCountries.png)
+
+# Analysis
+
+talking talking talking...
