@@ -31,11 +31,24 @@ CSC8643: Data Management and Exploratory Data Analysis
 # Business Understanding
 ## Business Objective
 
-  Newcastle University designed a massive open online course
+&nbsp;&nbsp;&nbsp;&nbsp; Newcastle University designed a massive open online course entitled "Cyber Security: Safety At Home, Online, and in Life". The Primary objective of this course was to provide a free resource that was easily accessible via the online provider FutureLearn on the topic of cyber security, and how the learners can protect their digital data.
+
+&nbsp;&nbsp;&nbsp;&nbsp; The course was ran 7 times, with the majority of users signing up at the beginning of the the first and second academic semesters from 2016 through 2018. The tasks of the course were exclusively online, and could be completed asynchronously. 
+
+&nbsp;&nbsp;&nbsp;&nbsp; The FutrureLern system recorded a vast about of data, covering a range of variables, including demographics, and engagement with the course, and because each user had a unique identifier, and their demographic and engagement data was recorded against their ID, there is a wide range of analysis that can be done.
 
 ## Access Situation
+### Inventory of Resources
+
+&nbsp;&nbsp;&nbsp;&nbsp; This project is being undertaken with a limited number of resources. There is a vast amount of data including demographics, and engagement with the course, as well as survey responses. Having an extensive amount of raw data is helpful to the aims, but requires additional resources to handle. For this project, I am a team of one, with no data science or modelling expertise. 
+
 ## Determine Data Mining Goals
+
+&nbsp;&nbsp;&nbsp;&nbsp; The specific goal of this analysis is to dig into the country demographics of the learners, and determine if there is a pattern that could lead to increasing the number of people who take the course, or increase the engagement of current users. 
+
 ## Produce Project Plan
+
+&nbsp;&nbsp;&nbsp;&nbsp; Due to my limited experience in data modeling, I will deploy some limited analysis techniques. 
 
 # Data Understanding
 ## Collect Inital Data
