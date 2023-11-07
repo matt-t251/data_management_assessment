@@ -1,7 +1,9 @@
+![Alt text](H:/Documents/FutureLearn/reports/ncl_logo.png)
 ---
-title: "Analysis Report"
-author: "Matthew"
-date: "2023-10-30"
+title: "CSC8643: Data Management and Exploratory Data Analysis"
+---
+author: "by Matthew Taylor"
+date: "7.11.2023"
 output: pdf_document
         
 ---
@@ -14,8 +16,10 @@ knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```{r Load project template, include=FALSE}
 library(ProjectTemplate)
 load.project()
-library(tidyverse)
 ```
+
+
+
 
 # Business Analysis
 i am talking about business stuff...
@@ -23,6 +27,7 @@ i am talking about business stuff...
 here is a bar chart:
 
 ![Alt text](H:/Documents/FutureLearn/graphs/BarChartofCountries.png)
+![Alt text](H:/Documents/FutureLearn/graphs/BarChartofCompletion.png)
 
 # Analysis
 

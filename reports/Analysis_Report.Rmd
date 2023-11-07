@@ -1,0 +1,79 @@
+---
+output: 
+  pdf_document:
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir= normalizePath('..'))
+```
+
+\title
+{%
+\includegraphics[width=0.5\textwidth]{H:/Documents/FutureLearn/reports/ncl_logo.png}~ 
+\\[3cm]
+CSC8643: Data Management and Exploratory Data Analysis
+}
+\author{by Matthew Taylor}
+\date{20th November, 2023}
+\maketitle
+
+
+\pagebreak
+\tableofcontents
+\pagebreak
+
+# Abstract
+
+# Introduction
+
+# Business Understanding
+## Business Objective
+
+  Newcastle University designed a massive open online course
+
+## Access Situation
+## Determine Data Mining Goals
+## Produce Project Plan
+
+# Data Understanding
+## Collect Inital Data
+## Decribe Data
+## Explore Data
+## Verify Data Quality
+
+# Data Preparation
+## Select Data
+## Clean Data
+## Construct Data
+## Intergrate Data
+## Format Data
+
+# Modeling
+## Select Modeling Techniques
+## Generate Test Design
+## Build Model
+## Assess Model
+
+# Evaluation
+## Evaluate Results
+## Review Proccess
+## Deterime next steps
+
+# Deployment
+## Plan Deployment
+## Plan Monitoringand Maintenance
+## Produce Final Report
+## Review Project
+
+\pagebreak
+ 
+here is a bar chart:
+
+![Alt text](H:/Documents/FutureLearn/graphs/BarChartofCountries.png)
+![Alt text](H:/Documents/FutureLearn/graphs/BarChartofCompletion.png)
+
+# Analysis
+
+talking talking talking...
