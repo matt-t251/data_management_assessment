@@ -1,3 +1,7 @@
+## INPUT: df_learners_no_duplicates (01-A.R)
+## OUTPUT: graphs/BarChartofCountries.png
+
+
 # install.packages("tidyverse")
 library(tidyverse)
 
@@ -5,32 +9,32 @@ library(tidyverse)
 library(countrycode)
 
 
-#make a dataframe of countries
-country_df <- subset(df_learners_no_duplicates, select = c("detected_country"))
+#make a data frame of countries
+df_country <- subset(df_learners_no_duplicates, select = c("detected_country"))
 
 # Use the table() function to create a frequency table
-country_counts <- table(country_df$detected_country)
+country_counts <- table(df_country$detected_country)
 
 # Convert the frequency table to a data frame
-country_df <- as.data.frame(country_counts)
+df_country <- as.data.frame(country_counts)
 
 # Rename the columns for clarity
-colnames(country_df) <- c("Country", "Count")
+colnames(df_country) <- c("country", "count")
 
 # remove -- (there are 873 --)
-country_df <- subset(country_df, Country != "--")       
+df_country <- subset(df_country, country != "--")       
 
 # Sort the data frame by the count in descending order
-country_df <- country_df[order(country_df$Count, decreasing = TRUE), ]
+df_country <- df_country[order(df_country$count, decreasing = TRUE), ]
 
 # keep only the top 20 which excludes any country with less than 300 users
-country_df <- head(country_df, n=20) 
+df_country <- head(df_country, n=20) 
 
 # change country code to name
-country_df$Country <- countrycode(sourcevar = country_df$Country, origin = "iso2c", destination = "country.name")
+df_country$country <- countrycode(sourcevar = df_country$country, origin = "iso2c", destination = "country.name")
 
 # Create the bar chart
-barchart <- ggplot(country_df, aes(x = reorder(Country, -Count), y = Count)) +
+barchart <- ggplot(df_country, aes(x = reorder(country, -count), y = count)) +
                   geom_bar(stat = "identity", fill = "blue") +
                   labs(
                     title = "Bar Chart of Countries",
