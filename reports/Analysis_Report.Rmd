@@ -10,6 +10,7 @@ knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```
 
 ```{r Load project template, include=FALSE}
+# setwd("~/Documents/FutureLearn")
 # library(ProjectTemplate)
 # load.project()
 
@@ -70,7 +71,7 @@ CSC8643: Data Management and Exploratory Data Analysis
 
 &nbsp;&nbsp;&nbsp;&nbsp; As part of my exploration, I firstly looked at the data gathered on the learners country. I found that most users, did not enter their country, but their country was also automatically detected, and recorded which had a much better level of data. // reword
 
-&nbsp;&nbsp;&nbsp;&nbsp; I also found there to be 2052 duplicate learner IDs, so i removed those, as well as the 39 users, who's roles were administrators, as i only want to track the data of the learners.
+&nbsp;&nbsp;&nbsp;&nbsp; I also found there to be 2052 duplicate learner IDs, so i removed those, as well as the 39 users, who's roles were administrators, as i only want to track the data of the learners.  // don't say what i did, just metion the bad data.
 
 
 
@@ -88,10 +89,24 @@ CSC8643: Data Management and Exploratory Data Analysis
 
 # Data Preparation
 ## Select Data
+
+&nbsp;&nbsp;&nbsp;&nbsp; For selecting my data, I started with creating new data frames from the provided CSV files provided by FutureLearn, using the enrollment data and the step data from the 7 runs. I also removed the unnecessary columns for clearer reading while working on the sets. 
+
 ## Clean Data
+
+&nbsp;&nbsp;&nbsp;&nbsp; To clean the data, I removed the administrators, as I was only intrested in the learners, and I removed users who's country wasn't detected. I decided to keep users who's detected and reported countries don't match, as I envision the findings of this analysis will most likely be used to set up targeted advertising, I which case the detected country would be more relevant. I did not include the 2.3% of learners who's country was not detected as only 84 of them reported their country.
+
 ## Construct Data
+
+didn't do this.
+
 ## Intergrate Data
+
+&nbsp;&nbsp;&nbsp;&nbsp; For my second round of CRISP-DM analysis, I built on the data i found in my first round, so i integrated the additional raw data required to my initial data frame. 
+
 ## Format Data
+
+not done.
 
 # Modeling
 ## Select Modeling Techniques
