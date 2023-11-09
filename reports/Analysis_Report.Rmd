@@ -9,6 +9,13 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```
 
+```{r Load project template, include=FALSE}
+# library(ProjectTemplate)
+# load.project()
+
+library("tinytex")
+```
+
 \title
 {%
 \includegraphics[width=0.5\textwidth]{H:/Documents/FutureLearn/reports/ncl_logo.png}~ 
@@ -52,9 +59,32 @@ CSC8643: Data Management and Exploratory Data Analysis
 
 # Data Understanding
 ## Collect Inital Data
+
+&nbsp;&nbsp;&nbsp;&nbsp; The FutureLearn system recorded an extensive amount of raw data and published them to CSV files, which have been made available for this report. 
+
 ## Decribe Data
+
+&nbsp;&nbsp;&nbsp;&nbsp; The date is separated by each of the 7 runs of the course, and by the description of the data, for example enrollment is separated from engagement, and so on. Many of the files contain the learners unique ID, so a parameter from one file can be linked to the same user in a different file. Not all runs tracked the same parameter, for example a learners archetype was not determined for the first 2 runs. 
+
 ## Explore Data
+
+&nbsp;&nbsp;&nbsp;&nbsp; As part of my exploration, I firstly looked at the data gathered on the learners country. I found that most users, did not enter their country, but their country was also automatically detected, and recorded which had a much better level of data. // reword
+
+&nbsp;&nbsp;&nbsp;&nbsp; I also found there to be 2052 duplicate learner IDs, so i removed those, as well as the 39 users, who's roles were administrators, as i only want to track the data of the learners.
+
+
+
+| **Number of learners:**                               | **37257** | **percentage:** |
+|-------------------------------------------------------|-----------|----------------:|
+| **who's country was detected**                        | 35205     |           94.5% |
+| **who self reported their country**                   | 3730      |             10% |
+| **who's reported and detected country was correct**   | 3421      |            9.2% |
+| **who's reported and detected country was incorrect** | 221       |            0.6% |
+| **who's country was not Detected**                    | 873       |            2.3% |
+
 ## Verify Data Quality
+
+&nbsp;&nbsp;&nbsp;&nbsp; I found the quality of the data collected around a learners country is likely to be quite accurate as only 6.4% of learners who reported their country, differed from their detected country. In all cases i used a learners detected country, as I had a larger data set, and there is no way of verifying if the detected county or reported country is the correct answer. There are a range of reasons, that one or the other may be correct, for example is a user is using a VPN, then their detected country could be incorrect.  
 
 # Data Preparation
 ## Select Data
