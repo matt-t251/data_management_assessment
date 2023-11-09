@@ -19,8 +19,8 @@ if ( !exists("df_learners_no_duplicates")) {
   df_admin_removed <- subset(appended_dataframe, role != "organisation_admin")                         
   
   # remove excess columns
-  columns_to_keep <- c("learner_id", "enrolled_at", "role", "country", "detected_country")
-  df_admin_removed <- subset(df_admin_removed, select = columns_to_keep) # 37257
+  # columns_to_keep <- c("learner_id", "enrolled_at", "role", "country", "detected_country")
+  # df_admin_removed <- subset(df_admin_removed, select = columns_to_keep) # 37257
   
   #remove duplicate learners across entire data frame
   df_learners_no_duplicates <- df_admin_removed[!duplicated(df_admin_removed$learner_id), ] #2052

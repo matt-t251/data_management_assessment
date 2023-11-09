@@ -10,11 +10,15 @@ knitr::opts_knit$set(root.dir= normalizePath('..'))
 ```
 
 ```{r Load project template, include=FALSE}
-# setwd("~/Documents/FutureLearn")
-# library(ProjectTemplate)
-# load.project()
+
+#setwd("~/Documents/FutureLearn")
+#library(ProjectTemplate)
+#load.project()
 
 library("tinytex")
+
+# need to find a way to save the date to the cache?
+source("H:/Documents/FutureLearn/src/tables_for_report.R")
 ```
 
 \title
@@ -68,6 +72,8 @@ CSC8643: Data Management and Exploratory Data Analysis
 
 // table of response rate
 
+`r correct_country`
+
 ## Describe Data
 
 &nbsp;&nbsp;&nbsp;&nbsp; The date is separated by each of the 7 runs of the course, and by which step the data was gathered. for example, during enrolment, the date and the learner’s demographics were recorded. There is a separate file for engagement, as well as for the feedback survey, for an approximate total of 8 files for each run. Many of the files contain the learners unique ID, so a parameter from one file can be linked to the same user in a different file. Not all runs tracked the same parameters, for example a learner’s archetype was not determined for the first 2 runs. 
@@ -79,11 +85,11 @@ CSC8643: Data Management and Exploratory Data Analysis
 
 | **Number of learners:**                               | **37257** | **Percent of learners:** |
 |-------------------------------------------------------|-----------|-------------------------:|
-| **who's country was detected**                        | 35205     |                    94.5% |
-| **who self reported their country**                   | 3730      |                      10% |
-| **who's reported and detected country was correct**   | 3421      |                     9.2% |
-| **who's reported and detected country was incorrect** | 221       |                     0.6% |
-| **who's country was not Detected**                    | 873       |                     2.3% |
+| **who's country was detected**                        | 35205     |                   94.5 % |
+| **who self reported their country**                   | 3730      |                     10 % |
+| **who's reported and detected country was correct**   | 3421      |                    9.2 % |
+| **who's reported and detected country was incorrect** | 221       |                    0.6 % |
+| **who's country was not Detected**                    | 873       |                    2.3 % |
 
 ## Verify Data Quality
 

@@ -1,4 +1,4 @@
-### calculate variables for the tables used in the report. 
+### calculate variables for the tables used in the report.
 
 ## response rate
 # gender
