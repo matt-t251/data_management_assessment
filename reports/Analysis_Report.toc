@@ -1,0 +1,33 @@
+\contentsline {section}{\numberline {1}Abstract}{4}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{4}{section.2}%
+\contentsline {section}{\numberline {3}Business Understanding}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Business Objective}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Access Situation}{4}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Inventory of Resources}{4}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}Determine Data Mining Goals}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Produce Project Plan}{4}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Data Understanding}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Collect Inital Data}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Decribe Data}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Explore Data}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Verify Data Quality}{5}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Data Preparation}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Select Data}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Clean Data}{5}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Construct Data}{6}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Intergrate Data}{6}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Format Data}{6}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Modeling}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Select Modeling Techniques}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Generate Test Design}{6}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Build Model}{6}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Assess Model}{6}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Evaluation}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Evaluate Results}{6}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Review Proccess}{7}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Deterime next steps}{7}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Deployment}{7}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Plan Deployment}{7}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Plan Monitoringand Maintenance}{7}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Produce Final Report}{7}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Review Project}{7}{subsection.8.4}%

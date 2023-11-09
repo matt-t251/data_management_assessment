@@ -75,13 +75,13 @@ CSC8643: Data Management and Exploratory Data Analysis
 
 
 
-| **Number of learners:**                               | **37257** | **percentage:** |
-|-------------------------------------------------------|-----------|----------------:|
-| **who's country was detected**                        | 35205     |           94.5% |
-| **who self reported their country**                   | 3730      |             10% |
-| **who's reported and detected country was correct**   | 3421      |            9.2% |
-| **who's reported and detected country was incorrect** | 221       |            0.6% |
-| **who's country was not Detected**                    | 873       |            2.3% |
+| **Number of learners:**                               | **37257** | **Percent of learners:** |
+|-------------------------------------------------------|-----------|-------------------------:|
+| **who's country was detected**                        | 35205     |                    94.5% |
+| **who self reported their country**                   | 3730      |                      10% |
+| **who's reported and detected country was correct**   | 3421      |                     9.2% |
+| **who's reported and detected country was incorrect** | 221       |                     0.6% |
+| **who's country was not Detected**                    | 873       |                     2.3% |
 
 ## Verify Data Quality
 
@@ -94,7 +94,7 @@ CSC8643: Data Management and Exploratory Data Analysis
 
 ## Clean Data
 
-&nbsp;&nbsp;&nbsp;&nbsp; To clean the data, I removed the administrators, as I was only intrested in the learners, and I removed users who's country wasn't detected. I decided to keep users who's detected and reported countries don't match, as I envision the findings of this analysis will most likely be used to set up targeted advertising, I which case the detected country would be more relevant. I did not include the 2.3% of learners who's country was not detected as only 84 of them reported their country.
+&nbsp;&nbsp;&nbsp;&nbsp; To clean the data, I removed the administrators, as I was only interested in the learners, and I removed users who's country wasn't detected. I decided to keep users who's detected and reported countries don't match, as I envision the findings of this analysis will most likely be used to set up targeted advertising, I which case the detected country would be more relevant. I did not include the 2.3% of learners who's country was not detected as only 84 of them reported their country.
 
 ## Construct Data
 
@@ -116,6 +116,11 @@ not done.
 
 # Evaluation
 ## Evaluate Results
+
+&nbsp;&nbsp;&nbsp;&nbsp; Through the first round of CRISP-DM i found the found the number of learners who enrolled onto the course, and which country they were from. There were learners from 199 countries who participated in the course. 
+
+![](H:/Documents/FutureLearn/graphs/BarChartofCountries.png)
+
 ## Review Proccess
 ## Deterime next steps
 
@@ -127,11 +132,6 @@ not done.
 
 \pagebreak
  
-here is a bar chart:
 
-![Alt text](H:/Documents/FutureLearn/graphs/BarChartofCountries.png)
+
 ![Alt text](H:/Documents/FutureLearn/graphs/BarChartofCompletion.png)
-
-# Analysis
-
-talking talking talking...
