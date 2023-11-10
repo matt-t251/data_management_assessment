@@ -24,10 +24,10 @@
 \contentsline {subsection}{\numberline {6.4}Assess Model}{7}{subsection.6.4}%
 \contentsline {section}{\numberline {7}Evaluation}{7}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Evaluate Results}{7}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Review Process}{7}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Determine next steps}{7}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Deployment}{7}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Plan Deployment}{7}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Plan Monitoring and Maintenance}{7}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Produce Final Report}{7}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Review Project}{7}{subsection.8.4}%
+\contentsline {subsection}{\numberline {7.2}Review Process}{8}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Determine next steps}{8}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Deployment}{8}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Plan Deployment}{8}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Plan Monitoring and Maintenance}{8}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Produce Final Report}{8}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Review Project}{8}{subsection.8.4}%
