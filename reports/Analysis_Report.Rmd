@@ -144,6 +144,9 @@ not done.
 
 # Modelling
 ## Select Modelling Techniques
+
+compere 
+
 ## Generate Test Design
 ## Build Model
 ## Assess Model
@@ -156,6 +159,10 @@ For my first cycle of the CRISP-DM analysis, I looked at which counties the lear
 
 ![](H:/Documents/FutureLearn/graphs/PieChartofContinents.png)
 ![](H:/Documents/FutureLearn/graphs/BarChartofCountries.png)
+
+For the second cycle of the CRISP-DM analysis, I decided to look at how many of the learners from each country completed the course, to get a better idea of each geograghic demographics engagement with the course. 
+
+![](H:/Documents/FutureLearn/graphs/BarChartofCompletion.png)
 
 ## Review Process
 ## Determine next steps
@@ -171,5 +178,5 @@ For my first cycle of the CRISP-DM analysis, I looked at which counties the lear
  
 
 
-![](H:/Documents/FutureLearn/graphs/BarChartofCompletion.png)
+
 

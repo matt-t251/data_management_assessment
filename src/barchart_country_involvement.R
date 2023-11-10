@@ -11,32 +11,20 @@ library(tidyverse)
 library(countrycode)
 
 
-#make a data frame of countries
-df_country <- subset(df_learners_no_duplicates, select = c("detected_country"))
-
-# Use the table() function to create a frequency table
-country_counts <- table(df_country$detected_country)
-
-# Convert the frequency table to a data frame
-df_country <- as.data.frame(country_counts)
-
-# Rename the columns for clarity
-colnames(df_country) <- c("country", "count")
-
-# remove -- (there are 873 --)
-df_country <- subset(df_country, country != "--")       
+# rename data frame
+df_for_barchart <- subset(df_country, country != "--")       
 
 # Sort the data frame by the count in descending order
-df_country <- df_country[order(df_country$count, decreasing = TRUE), ]
+df_for_barchart <- df_for_barchart[order(df_for_barchart$count, decreasing = TRUE), ]
 
 # keep only the top 20 which excludes any country with less than 300 users
-df_country <- head(df_country, n=20) 
+df_for_barchart <- head(df_for_barchart, n=20) 
 
 # change country code to name
-df_country$country <- countrycode(sourcevar = df_country$country, origin = "iso2c", destination = "country.name")
+df_for_barchart$country <- countrycode(sourcevar = df_for_barchart$country, origin = "iso2c", destination = "country.name")
 
 # Create the bar chart
-barchart <- ggplot(df_country, aes(x = reorder(country, -count), y = count)) +
+barchart <- ggplot(df_for_barchart, aes(x = reorder(country, -count), y = count)) +
                   geom_bar(stat = "identity", fill = "blue") +
                   labs(
                     title = "Bar Chart of Learners by Country",
