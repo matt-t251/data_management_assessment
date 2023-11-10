@@ -1,5 +1,8 @@
 ### calculate variables for the tables used in the report.
 
+library('ProjectTemplate')
+load.project()
+
 ## response rate
 # gender
 df <- df_learners_no_duplicates
@@ -38,7 +41,11 @@ reported_job = nrow(df)
 # 2881
 
 
-## number of learner:
+## number of learners:
+df <- df_learners_no_duplicates
+number_of_learners = nrow(df)
+# 35205
+
 # how many learners country was detected
 df <- df_learners_no_duplicates
 df <- subset(df , detected_country != "--")

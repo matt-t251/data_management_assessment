@@ -2,6 +2,8 @@
 ##        df_country  (barchart_country_involvement.R)
 ## OUTPUT: graphs/BarChartofCompletion.png
 
+library('ProjectTemplate')
+load.project()
 
 # install.packages("tidyverse")
 library(tidyverse)
