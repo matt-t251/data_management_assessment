@@ -2,6 +2,7 @@
 ## output is data frame of all learner IDs with their country, detected country, enrollment date, role,
 ## as well as Step and step completed date.
 
+#  INPUT: df_learners_no_duplicates
 # OUTPUT: df_learners
 
 
@@ -92,7 +93,9 @@ if ( !exists("df_learners")) {
         }
       }
     }
-  } 
+  }
+  cache("df_learners")
 } else {
   print("data frame already created.")
-  }
+}
+

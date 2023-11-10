@@ -4,6 +4,8 @@
 
 # OUTPUT: df_learners_no_duplicates
 
+
+
 if ( !exists("df_learners_no_duplicates")) {
   print("data frame missing")
   # create a dataframe of learners, their ID, country, and detected country from all years
@@ -23,7 +25,8 @@ if ( !exists("df_learners_no_duplicates")) {
   # df_admin_removed <- subset(df_admin_removed, select = columns_to_keep) # 37257
   
   #remove duplicate learners across entire data frame
-  df_learners_no_duplicates <- df_admin_removed[!duplicated(df_admin_removed$learner_id), ] #2052
+  df_learners_no_duplicates <- df_admin_removed[!duplicated(df_admin_removed$learner_id), ] #2052
+  cache("df_learners_no_duplicates")
 } else {
   print("data frame already created.")
 }
