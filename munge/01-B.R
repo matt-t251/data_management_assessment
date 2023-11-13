@@ -1,7 +1,7 @@
 ## Pre-processing script for cycle 1 (country_involvement)
-## output is data frame of countries 
+## output is data frame of countries with count of users
 
-# OUTPUT: df_learners_no_duplicates
+# OUTPUT: df_country
 
 #make a data frame of countries
 df_country <- subset(df_learners_no_duplicates, select = c("detected_country"))

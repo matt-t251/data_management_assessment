@@ -37,3 +37,10 @@ You'll have access to all of your data, already fully preprocessed, and
 all of the libraries you want to use.
 
 For more details about ProjectTemplate, see http://projecttemplate.net
+
+
+01_A.R - creates data frame of learners with enrolment data,
+02_A.R - appends engagement data to previous data frame.
+01_B.R - creates data frame of countries and total count of learners
+02_B.R - appends completion count and percentage to previous data frame
+

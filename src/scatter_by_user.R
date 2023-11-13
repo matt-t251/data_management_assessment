@@ -12,4 +12,18 @@ library(tidyverse)
 library(countrycode)
 
 
-# use df_country but currently its only to top 20
+# Sort the data frame by the count in descending order
+df_for_scattergraph <- df_country[order(df_country$completion_percent, decreasing = TRUE), ]
+
+# keep only the top performing country
+df_for_scattergraph <- head(df_for_scattergraph, n=20)
+
+# change country code to name
+df_for_scattergraph$country <- countrycode(sourcevar = df_for_scattergraph$country, origin = "iso2c", destination = "country.name")
+
+scatter_plot <- ggplot(df_for_scattergraph, aes(x = completion_percent, y = count, color = country)) +
+  geom_point() +
+  labs(title = "Scatter Plot of Completion Percent vs. Count",
+       x = "Completion Percent",
+       y = "Count",
+       color = "Country")
