@@ -27,13 +27,13 @@ if ( !exists("df_learners")) {
   df_learners$completed_at <- ""
   
   for (n in 1:nrow(df_learners)) {
-    print(n)
+    # print(n)
     
     # store a single user id
     learner_id_char <- df_learners$learner_id[n]
     
     # if the ID is in the data frame...
-    if (learner_id_char %in% df_learners$learner_id) {
+    if (learner_id_char %in% df_learner_steps$learner_id) {
       
       # Find the rows where the learner_id matches in df_learners, it will return a vector of all instances.
       row_index <- which(df_learner_steps$learner_id == learner_id_char)
