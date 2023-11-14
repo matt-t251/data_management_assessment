@@ -10,7 +10,7 @@
 # took 7 minutes to process
 
 if ( !exists("df_learners")) {
-  print("data frame missing")
+  print("data frame missing - recreating...")
   
   # append the data frames
   df_learner_steps <- rbind(cyber.security.1_step.activity,

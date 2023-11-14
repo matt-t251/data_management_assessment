@@ -7,7 +7,7 @@
 
 
 if ( !exists("df_learners_no_duplicates")) {
-  print("data frame missing")
+  print("data frame missing - recreating...")
   # create a dataframe of learners, their ID, country, and detected country from all years
   appended_dataframe <- rbind(cyber.security.1_enrolments,
                               cyber.security.2_enrolments,

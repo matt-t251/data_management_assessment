@@ -4,8 +4,8 @@
 #  INPUT: df_country
 # OUTPUT: df_country
 
-# create a data frame of countries that have competed step 3.9
-df_countries_completed <- subset(df_learners, step != "")
+# create a data frame of countries that have completed step 3.9
+df_countries_completed <- subset(df_learners, step == "3.9")
 
 # create frequency table
 country_count <- table(df_countries_completed$detected_country)
@@ -25,7 +25,7 @@ for (n in 1:nrow(df_country)) {
   country_name = as.character(df_country$country[n])
   print(country_name)
 
-  df_subset <- subset(df_learners, df_learners$detected_country == country_name & step != "")
+  df_subset <- subset(df_learners, df_learners$detected_country == country_name & step == "3.9")
   df_country$completion_count[n]   <- nrow(df_subset)
   df_country$completion_percent[n] <- (df_country$completion_count[n] / df_country$count[n]) * 100
 }
