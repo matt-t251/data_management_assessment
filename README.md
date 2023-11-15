@@ -1,7 +1,7 @@
 # FutureLearn
 
 This README will cover the contents of the project directory, as well as how to knit the report.
-
+```
 FutureLearn
 ├──cache       # contains the cached version of the data, as well as munged data.
 ├──config
@@ -23,7 +23,7 @@ FutureLearn
 │ └──  Analysis_Report.pdf    # the report
 ├──src         # Contains the R files that generates the graphs and save them to /graphs.
 ├──tests
-
+```
 
 To load the project, you'll first need to `setwd()` into the directory
 where this README file is located. Then you need to run the following two
