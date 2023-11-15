@@ -12,16 +12,16 @@ FutureLearn
 ├──lib
 ├──logs
 ├──munge
-│ ├──01_A.R    # creates data frame of learners with enrolment data,
+│ ├── 01_A.R    # creates data frame of learners with enrolment data,
 │ ├── 02_A.R    # appends engagement data to previous data frame.
 │ ├── 01_B.R    # creates data frame of countries and total count of learners
 │ ├── 02_B.R    # appends completion count and percentage to previous data frame
-│ └──  02-C.R    # appends engagement count and percentage to previous data frame
+│ └── 02-C.R    # appends engagement count and percentage to previous data frame
 ├──profiling
 ├──reports
 │ ├── Analysis_Report.Rmd    # the Rmarkdown that generates the repport.
-│ └──  Analysis_Report.pdf    # the report
-├──src         # Contains the R files that generates the graphs and save them to /graphs.
+│ └── Analysis_Report.pdf    # the report
+├──src         		     # Contains the R files that generates the graphs and save them to /graphs.
 ├──tests
 ```
 
