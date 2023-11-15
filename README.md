@@ -1,18 +1,31 @@
 # FutureLearn
 
-Welcome to ProjectTemplate!
+This README will cover the contents of the project directory, as well as how to knit the report.
 
-This file introduces you to ProjectTemplate, but you should eventually replace
-the contents of this file with an introduction to your project. People who
-work with your data in the future will thank you for it, including your future
-self.
+FutureLearn
+????????????cache       # contains the cached version of the data, as well as munged data.
+????????????config
+????????????data        # the raw CSV data files
+????????????diagnostics
+????????????docs
+????????????graphs      # PNG files of the graphs used. writen over when knitted.
+????????????lib
+????????????logs
+????????????munge
+??? ????????? 01_A.R    # creates data frame of learners with enrolment data,
+??? ????????? 02_A.R    # appends engagement data to previous data frame.
+??? ????????? 01_B.R    # creates data frame of countries and total count of learners
+??? ????????? 02_B.R    # appends completion count and percentage to previous data frame
+??? ????????? 02-C.R    # appends engagement count and percentage to previous data frame
+????????????profiling
+????????????reports
+??? ????????? Analysis_Report.Rmd    # the Rmarkdown that generates the repport.
+??? ????????? Analysis_Report.pdf    # the report
+????????????src         # Contains the R files that generates the graphs and save them to /graphs.
+????????????tests
 
-ProjectTemplate is an R package that helps you organize your statistical
-analysis projects. Since you're reading this file, we'll assume that you've
-already called `create.project()` to set up this project and all of its
-contents.
 
-To load your new project, you'll first need to `setwd()` into the directory
+To load the project, you'll first need to `setwd()` into the directory
 where this README file is located. Then you need to run the following two
 lines of R code:
 
@@ -26,21 +39,7 @@ messages as ProjectTemplate goes about doing its work. This work involves:
 * Reading in any datasets stored in `data` or `cache`.
 * Preprocessing your data using the files in the `munge` directory.
 
-Once that's done, you can execute any code you'd like. For every analysis
-you create, we'd recommend putting a separate file in the `src` directory.
-If the files start with the two lines mentioned above:
-
-	library('ProjectTemplate')
-	load.project()
+Once that's done, you can execute any code you'd like.
 
 You'll have access to all of your data, already fully preprocessed, and
 all of the libraries you want to use.
-
-For more details about ProjectTemplate, see http://projecttemplate.net
-
-
-01_A.R - creates data frame of learners with enrolment data,
-02_A.R - appends engagement data to previous data frame.
-01_B.R - creates data frame of countries and total count of learners
-02_B.R - appends completion count and percentage to previous data frame
-

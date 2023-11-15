@@ -25,7 +25,7 @@ df_for_scattergraph <- df_country
 
 scatter_plot <- ggplot(df_for_scattergraph, aes(x = completion_percent, y = count,)) +
   geom_point() +
-  labs(title = "Scatter plot of percentage of learners who engaged in the course vs. total learners from a country",
+  labs(title = "Scatter plot of percentage of learners who completed in the course \n vs. total learners from a country",
        x = "Percentage of learners who completed the course (%)",
        y = "Total Learners from country",
        color = "Country")
@@ -33,4 +33,4 @@ guides(color = FALSE)
 
 (scatter_plot)
 
-ggsave("H:/Documents/FutureLearn/graphs/scatter_plot_of_engagement.png", plot = scatter_plot, width = 6, height = 4, dpi = 300)
+ggsave("H:/Documents/FutureLearn/graphs/scatter_plot_of_completion.png", plot = scatter_plot, width = 6, height = 4, dpi = 300)

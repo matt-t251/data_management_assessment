@@ -21,9 +21,10 @@ source("src/barchart_country_involvement.R")
 source("src/barchart_country_completion.R")
 source("src/pie_chart_continent.R")
 source("src/tables_for_report.R")
+source("src/scatter_completion.R")
+source("src/scatter_engagement.R")
 
 
-# source("H:/Documents/FutureLearn/src/tables_for_report.R")
 ```
 
 \title
@@ -33,7 +34,7 @@ source("src/tables_for_report.R")
 CSC8643: Data Management and Exploratory Data Analysis
 }
 \author{by Matthew Taylor}
-\date{20th November, 2023}
+\date{17th November, 2023}
 \maketitle
 
 
@@ -41,21 +42,36 @@ CSC8643: Data Management and Exploratory Data Analysis
 \tableofcontents
 \pagebreak
 
- 
 # Abstract
 # Introduction
+
+\pagebreak
+
 # Business Understanding
 ## Business Objective
+
+&nbsp;&nbsp;&nbsp;&nbsp;
 Newcastle University developed a massive open online course titled "Cyber Security: Safety At Home, Online, and in Life" with the primary goal of providing a free and easily accessible resource on the topic of cyber security, specifically on how learners can safeguard their digital data. The course was offered seven times, with the majority of users enrolling during the first and second academic semesters from 2016 to 2018. All course tasks were conducted online and asynchronously.
+
+&nbsp;&nbsp;&nbsp;&nbsp;
 The main objective of the course was to reach as many learners as possible worldwide, which was facilitated by offering the course for free and making participation asynchronous. The FutureLearn system captured an extensive amount of data, covering a range of variables. Since each user had a unique identifier, it allowed for a wide range of analyses that can be conducted by combining different parameters.
+
+&nbsp;&nbsp;&nbsp;&nbsp;
 This study aims to analyse the geographic demographics of the learners with the objective of identifying countries with a high number of enrolments. This analysis would provide a better understanding of the data, allowing future course content to be designed with cultural nuance, language preference, and regional challenges in mind. The data could also aid in allocating resources based on the geographic demographics of the learners. For instance, translating the course into different languages could increase enrolments.
+
+&nbsp;&nbsp;&nbsp;&nbsp;
 In the second round of analysis, the study investigated the engagement of the learners with the course by examining their completion rates relative to their detected country. This analysis could help to identify ways to make the course more relevant to the learners' differing cultures and increase their engagement. For example, having course administrators who are familiar with the learners' cultures could be beneficial.
 The report's success criteria are to successfully explore the geographic demographics of the user base and to examine the engagement and completion rates of the learners on the course.
 
 ## The Project Plan and Data Mining Goals
+
+&nbsp;&nbsp;&nbsp;&nbsp;
 The project plan entails conducting two rounds of CRISP-DM analysis, with the second round building upon the findings of the first. The utilization of the CRISP-DM structure, a Cross-Industry Standard Process in Data Mining, offers a highly structured approach for a data mining-driven report, encouraging the completion of integral processes and the consideration of important factors.
 
+&nbsp;&nbsp;&nbsp;&nbsp;
 The analysis aims to delve into the demographics of the learners' respective countries and discern any patterns that may contribute to an increase in the number of individuals taking the course or improve the engagement levels of current users.
+
+\pagebreak
 
 # Data Understanding
 ## Collect Initial Data
@@ -96,6 +112,7 @@ During the exploration, the data on the country of the learners was initially ex
 &nbsp;&nbsp;&nbsp;&nbsp;
 The accuracy of a learner's reported country was assumed to be sufficiently accurate, given that it was automatically collected upon enrollment. To test this assumption, a comparison was made between the reported country and the detected country of learners who reported their country. The analysis revealed that 6.07% of learners who reported their country, provided a different country from the one detected. As a result, it is assumed that the detected country parameter has an accuracy rate exceeding 93%. Factors, such as a learner's use of a VPN or reporting their home nation while residing abroad, could be deemed to influence the accuracy of either parameter. 
 
+\pagebreak
 
 # Data Preparation
 ## Select Data
@@ -115,36 +132,47 @@ Data cleaning involved the removal of the 2052 duplicate learner IDs and the 39 
 For the second round of CRISP-DM analysis, the geographic data from the first round was integrated with additional raw data from the step file, which enabled the incorporation of engagement data from each learner. Once the data was collated and associated with each learner, additional data points were constructed. Specifically, the number of learners from each country and their engagement were used to identify the learners who completed the course. This information was then used to calculate the engagement and course completion percentage for each country.
 
 
- 
 # Modelling
 ## Select Modelling Techniques
 ## Generate Test Design
 ## Build Model
 ## Assess Model
 
- 
+\pagebreak
+
 # Evaluation
 ## Evaluate Results
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 In the first cycle of the CRISP-DM analysis, an investigation was conducted into the countries where the learners were detected. Based on the pie chart, the majority of learners were located in Europe, with Asia and the Americas following in second and third place, respectively. The bar chart below provides a closer look at individual countries. It is observed that the UK had the vast majority of learners, with India and the United States following in second and third place, respectively. 
 
-![](H:/Documents/FutureLearn/graphs/PieChartofContinents.png)
-![](H:/Documents/FutureLearn/graphs/BarChartofCountries.png)
+![](H:/Documents/FutureLearn/graphs/PieChartofContinents.png){ width=500px height=333px }
+
+![](H:/Documents/FutureLearn/graphs/BarChartofCountries.png){ width=500px height=333px }
+
+\pagebreak
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 For the second cycle of the CRISP-DM analysis, the number of learners who completed the course from each country was analyzed to gain a better understanding of their engagement with the course. The country with the highest number of learners who completed the course was the UK, with 26 learners, which represents 0.24% of all learners from the UK. The country with the highest completion rate was Cambodia with 4.2%, which was one of their 24 learners. 
+
 ![](H:/Documents/FutureLearn/graphs/BarChartofCompletion.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 It was found that the number of learners who completed the course was quite low, with only 0.15% of learners completing it. Therefore, engagement was also analysed. It was observed that 40.2% of learners engaged with the course after enrolment, resulting in a considerably larger dataset when analyzing engagement rather than completion.
-&nbsp;&nbsp;&nbsp;&nbsp;
-A scatter plot was created for both engagement in the course and completing the course to determine if there was a correlation between the number of learners from a country and their completion or engagement rate. As evidenced by the first scatter plot, there is no correlation between the number of learners from a country and how many users continued to engage with the course after enrolment. 
-&nbsp;&nbsp;&nbsp;&nbsp;
-The second scatter plot shows a loose negative monotonic relationship, indicating that as the number of learners from a country increases, the percentage of learners who complete the course decreases. Of the 20 countries that had a learner complete the course, 16 of those countries only had one user complete the course. Therefore, the quality and quantity of the data is insufficient to draw any conclusions.
 
-![](H:/Documents/FutureLearn/graphs/scatter_plot_of_completion.png)
-![](H:/Documents/FutureLearn/graphs/scatter_plot_of_engagement.png)
+\pagebreak
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+A scatter plot was created for both engagement in the course and completing the course to determine if there was a correlation between the number of learners from a country and their completion or engagement rate. The first scatter plot shows a loose negative monotonic relationship, indicating that as the number of learners from a country increases, the percentage of learners who complete the course decreases. Of the 20 countries that had a learner complete the course, 16 of those countries only had one user complete the course. Therefore, the quality and quantity of the data is insufficient to draw any conclusions.
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+![](H:/Documents/FutureLearn/graphs/scatter_plot_of_completion.png){ width=500px height=333px }
+
+The second scatter plot, there is no correlation between the number of learners from a country and how many users continued to engage with the course after enrolment. 
+
+![](H:/Documents/FutureLearn/graphs/scatter_plot_of_engagement.png){ width=500px height=333px }
 
 ## Review Process
 ## Determine next steps

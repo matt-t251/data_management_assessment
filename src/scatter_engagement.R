@@ -25,9 +25,9 @@ df_for_scattergraph <- df_country
 
 scatter_plot <- ggplot(df_for_scattergraph, aes(x = count, y = engagement_percent,)) +
   geom_point() +
-  labs(title = "Scatter plot of percentage of learners who engaged in the course vs. total learners from a country",
-       x = "Total Learners from country",
-       y = "percentage of learners who engaged in the course (%)",
+  labs(title = "Scatter plot of percentage of learners who engaged in the course \n vs. total learners from a country",
+       x = "Percentage of learners who engaged in the course (%)",
+       y = "Total Learners from country",
        color = "Country")
   guides(color = FALSE)
 
