@@ -25,11 +25,11 @@ df_for_barchart$country <- countrycode(sourcevar = df_for_barchart$country, orig
 
 # Create the bar chart
 barchart <- ggplot(df_for_barchart, aes(x = reorder(country, -count), y = count)) +
-                  geom_bar(stat = "identity", fill = "blue") +
+                  geom_bar(stat = "identity", fill = "black") +
                   labs(
                     title = "Bar Chart of Learners by Country",
                     x = "Country",
-                    y = "Count"
+                    y = "Number of Learners"
                   ) +
                   theme_minimal() +
                   theme(axis.text.x = element_text(angle = 45, hjust = 1))

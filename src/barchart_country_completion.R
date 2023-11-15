@@ -23,7 +23,7 @@ df_for_barchart$country <- countrycode(sourcevar = df_for_barchart$country, orig
 
 # Create the bar chart
 barchart <- ggplot(df_for_barchart, aes(x = reorder(country, -completion_percent), y = completion_percent)) +
-  geom_bar(stat = "identity", fill = "blue") +
+  geom_bar(stat = "identity", fill = "black") +
   labs(
     title = "Bar Chart of Completion Percentage by Country",
     x = "Country",

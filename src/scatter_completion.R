@@ -1,5 +1,5 @@
 ## INPUT: df_country (02-B.R)
-## OUTPUT: graphs/scatter_plot_of_engagement.png
+## OUTPUT: graphs/scatter_plot_of_completion.png
 
 
 library('ProjectTemplate')

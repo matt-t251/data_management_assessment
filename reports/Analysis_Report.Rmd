@@ -41,50 +41,27 @@ CSC8643: Data Management and Exploratory Data Analysis
 \tableofcontents
 \pagebreak
 
+ 
 # Abstract
-
 # Introduction
 # Business Understanding
 ## Business Objective
+Newcastle University developed a massive open online course titled "Cyber Security: Safety At Home, Online, and in Life" with the primary goal of providing a free and easily accessible resource on the topic of cyber security, specifically on how learners can safeguard their digital data. The course was offered seven times, with the majority of users enrolling during the first and second academic semesters from 2016 to 2018. All course tasks were conducted online and asynchronously.
+The main objective of the course was to reach as many learners as possible worldwide, which was facilitated by offering the course for free and making participation asynchronous. The FutureLearn system captured an extensive amount of data, covering a range of variables. Since each user had a unique identifier, it allowed for a wide range of analyses that can be conducted by combining different parameters.
+This study aims to analyse the geographic demographics of the learners with the objective of identifying countries with a high number of enrolments. This analysis would provide a better understanding of the data, allowing future course content to be designed with cultural nuance, language preference, and regional challenges in mind. The data could also aid in allocating resources based on the geographic demographics of the learners. For instance, translating the course into different languages could increase enrolments.
+In the second round of analysis, the study investigated the engagement of the learners with the course by examining their completion rates relative to their detected country. This analysis could help to identify ways to make the course more relevant to the learners' differing cultures and increase their engagement. For example, having course administrators who are familiar with the learners' cultures could be beneficial.
+The report's success criteria are to successfully explore the geographic demographics of the user base and to examine the engagement and completion rates of the learners on the course.
 
-&nbsp;&nbsp;&nbsp;&nbsp;
-Newcastle University designed a massive open online course entitled "Cyber Security: Safety At Home, Online, and in Life". The Primary objective of this course was to provide a free resource that was easily accessible via the online provider FutureLearn on the topic of cyber security, and how the learners can protect their digital data.
+## The Project Plan and Data Mining Goals
+The project plan entails conducting two rounds of CRISP-DM analysis, with the second round building upon the findings of the first. The utilization of the CRISP-DM structure, a Cross-Industry Standard Process in Data Mining, offers a highly structured approach for a data mining-driven report, encouraging the completion of integral processes and the consideration of important factors.
 
-&nbsp;&nbsp;&nbsp;&nbsp;
-The course was ran 7 times, with the majority of users signing up at the beginning of the first and second academic semesters from 2016 through 2018. The tasks set out in the course were exclusively online and could be completed asynchronously. 
-
-&nbsp;&nbsp;&nbsp;&nbsp;
-A main aim of this course was to have as large a reach around the world as possible, and this was facilitated by making the course free, online and the participation asynchronous. The FutureLearn system recorded a vast about of data, covering a range of variables, and because each user had a unique identifier, there is a wide range of analysis that can be done, bringing together different parameters. 
-
-&nbsp;&nbsp;&nbsp;&nbsp;
-With this aim in mind, I have decided to analysis the geographic demographic of the learners, as a greater understanding of this data could allow for identifying countries with a high number of enrolment. With country specific data, future course content could be designed with cultural nuance, language preference and regional challenges. This data could also help with resource allocation, based on learner’s geographic demographic. For example, it could be found that translating the course into different languages could increase the number of enrolments.
-
-&nbsp;&nbsp;&nbsp;&nbsp;
-For the second round of analysis, I will build on the learner’s geographic demographic, and look at their engagement with the course, by looking at the learners completion rate compared to their country. This data could be helpful as it could demonstrate for example, that having course administrators who are familiar with the differing cultures, could make the course more relevant, which could increase the engagement. 
-
-## success critira
-
-## Access Situation
-### Inventory of Resources
-
-&nbsp;&nbsp;&nbsp;&nbsp;
-This project is being undertaken with a limited number of resources. There is a vast amount of data including demographics, and engagement with the course, as well as survey responses. Having an extensive amount of raw data is helpful to the aims but requires additional resources to handle. For this project, I am a team of one, with no data science or modelling expertise. 
-
-## Determine Data Mining Goals
-
-&nbsp;&nbsp;&nbsp;&nbsp;
-The specific goal of this analysis is to dig into the country demographics of the learners, and determine if there is a pattern that could lead to increasing the number of people who take the course, or increase the engagement of current users. 
-
-## Produce Project Plan
-
-&nbsp;&nbsp;&nbsp;&nbsp;
-Due to my limited experience in data modelling, I will deploy some limited analysis techniques. 
+The analysis aims to delve into the demographics of the learners' respective countries and discern any patterns that may contribute to an increase in the number of individuals taking the course or improve the engagement levels of current users.
 
 # Data Understanding
 ## Collect Initial Data
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-The FutureLearn system recorded an extensive amount of raw data and recorded them to CSV files, which have been made available for this report. The data is mostly gathered automatically by the FutureLearn system, but some of the data was gathered though asking the learner. Many of the data points that were requested from the user were optional, including parameters like country, age range, gender, education level, and employment status, which resulted in a low response rate, shown in the table below.
+The FutureLearn system amassed a significant amount of raw data that has been logged in CSV files, and these files have been made available for the purposes of this report. The data is predominantly collected automatically by the FutureLearn system, although certain data points were obtained from the learners themselves. Notably, many of the data points that were requested from the users were optional, such as their country, age range, gender, level of education, and employment status, and this resulted in a low response rate, as illustrated in the table presented below.
 
 |                           |**Number who reported:**|**Percentage who reported:**|
 |---------------------------|-----------------------:|---------------------------:|
@@ -99,18 +76,17 @@ The FutureLearn system recorded an extensive amount of raw data and recorded the
 ## Describe Data
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-The date is separated by each of the 7 runs of the course, and by which step the data was gathered. for example, during enrolment, the date and the learner’s demographics were recorded. There is a separate file for engagement, as well as for the feedback survey, for an approximate total of 8 files for each run. Many of the files contain the learners unique ID, so a parameter from one file can be associated to the same learner in a different file. Not all runs tracked the same parameters, for example a learner’s archetype was not determined for the first 2 runs. 
-
+The data is categorized by each of the 7 runs of the course and by the specific phase in which the data was collected. For instance, during enrolment, the date and demographics of the learner were documented. There are eight separate documents for each run, which include engagement and feedback survey responses. Many of these files contain the unique ID of the learner, allowing for the association of parameters from one file to another. It is important to note that not all runs monitored the same parameters, such as the learner's archetype, which was not determined during the first two runs.
 ## Explore Data
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-As part of my exploration, I firstly looked at the data gathered on the learners country. I found that only 10.6% of learners reported their country, but unlike the other demographics, the FutureLearn platform would detect the country the learner connected from at the time of enrolment.
+During the exploration, the data on the country of the learners was initially examined. It was discovered that only 10.6% of the learners indicated their country. However, unlike the other demographic information, the detected country of the learners was automatically detected by the FutureLearn platform upon enrolment.
 
 |                                                     |             **Total:** |**Percentage:**|
 |-----------------------------------------------------|-----------------------:| -------------:|
 |**Number of learners**                               |  `r number_of_learners`|       100.0 % |
 |**whose country was detected**                       |    `r country_detected`|        94.5 % |
-|**who self reported their country**                  |    `r country_reported`|        10.0 % |
+|**who self reported their country**                  |    `r country_reported`|        10.6 % |
 |**whose reported and detected country was correct**  |     `r correct_country`|         9.2 % |
 |**whose reported and detected country was incorrect**|    `r incorrct_country`|         0.6 % |
 |**whose country was not Detected**                   |`r country_not_detected`|         2.3 % |
@@ -118,53 +94,57 @@ As part of my exploration, I firstly looked at the data gathered on the learners
 ## Verify Data Quality
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-I would assume the data of the learners country would be sufficiently accurate, as it was automatically gathered when the learner enrolled. I tested this assumption by looking at the learners who reported their country and compared it to their detected country and I found that 6.07% of learners who reported their country, reported a different country to the one detected. Therefor it could be assumed that the detected country parameter has an accuracy of greater than 93%. There are a range of reasons that one or the other may be correct, for example if a learner is using a VPN, then their detected country could be incorrect, or a learner may have reported their home nation while living abroad, resulting in the reported country being incorrect.
+The accuracy of a learner's reported country was assumed to be sufficiently accurate, given that it was automatically collected upon enrollment. To test this assumption, a comparison was made between the reported country and the detected country of learners who reported their country. The analysis revealed that 6.07% of learners who reported their country, provided a different country from the one detected. As a result, it is assumed that the detected country parameter has an accuracy rate exceeding 93%. Factors, such as a learner's use of a VPN or reporting their home nation while residing abroad, could be deemed to influence the accuracy of either parameter. 
+
 
 # Data Preparation
 ## Select Data
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-As I found the accuracy of the reported country to be greater than 93%, and there are over 35 thousand learner’s whose country was detected, so I chose to use that parameter over the reported country as only `r country_reported` learners reported their country, giving a larger data set to work from. I also needed to work with the progress data from the step files provided as well as the learner IDs from each of the files to connect a learner’s country and engagement. 
+As I found the accuracy of the reported country to be greater than 93%, and there are over 35 thousand learners whose country was detected, I chose to use that parameter over the reported country as only `r country_reported` learners reported their country, giving a larger data set to work from. I also needed to work with the progress data from the step files provided as well as the learner IDs from each of the files to connect a learner’s country and engagement. 
+
 
 ## Clean Data
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-To clean the data, I removed the 2052 duplicate learner IDs as well as the 39 administrators, as I was only interested in the learners. I also removed users who's country wasn't detected. I decided to keep users who's detected and reported countries don't match, as I envision the findings of this analysis will most likely be used to set up targeted advertising, In which case the detected country would be more relevant. I did not include the 2.3% of learners whose country was not detected as only 84 of them reported their country.
+Data cleaning involved the removal of the 2052 duplicate learner IDs and the 39 administrators, as well as users whose country was not detected. Users whose detected and reported countries did not match were retained, as the findings of the analysis were envisioned to be used for targeted advertising, where the detected country was deemed more relevant. Only 2.3% of learners whose country was not detected were excluded, as only 84 of them reported their country. 
 
-## Construct Data
-
-didn't do this.
-
-## Integrate Data
+## Integrating and Constructing Data
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-For my second round of CRISP-DM analysis, I built on the geographic data found in my first round, so I integrated the additional raw data from the step file, so that I could incorporate the engagement data from each learner.
+For the second round of CRISP-DM analysis, the geographic data from the first round was integrated with additional raw data from the step file, which enabled the incorporation of engagement data from each learner. Once the data was collated and associated with each learner, additional data points were constructed. Specifically, the number of learners from each country and their engagement were used to identify the learners who completed the course. This information was then used to calculate the engagement and course completion percentage for each country.
 
-## Format Data
 
-not done.
-
+ 
 # Modelling
 ## Select Modelling Techniques
-
-compere 
-
 ## Generate Test Design
 ## Build Model
 ## Assess Model
 
+ 
 # Evaluation
 ## Evaluate Results
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-For my first cycle of the CRISP-DM analysis, I looked at which counties the learners were detected in. As we can see from the pie chart, most learners were  located in Europe With Asia and the Americas coming in second and third respectively. Looking closer at the individual countries shown in the bar chart below, The vast majority of learners are from the UK, with India and the United States being second and third respectively. 
+In the first cycle of the CRISP-DM analysis, an investigation was conducted into the countries where the learners were detected. Based on the pie chart, the majority of learners were located in Europe, with Asia and the Americas following in second and third place, respectively. The bar chart below provides a closer look at individual countries. It is observed that the UK had the vast majority of learners, with India and the United States following in second and third place, respectively. 
 
 ![](H:/Documents/FutureLearn/graphs/PieChartofContinents.png)
 ![](H:/Documents/FutureLearn/graphs/BarChartofCountries.png)
 
-For the second cycle of the CRISP-DM analysis, I decided to look at how many of the learners from each country completed the course, to get a better idea of each geograghic demographics engagement with the course. 
-
+&nbsp;&nbsp;&nbsp;&nbsp;
+For the second cycle of the CRISP-DM analysis, the number of learners who completed the course from each country was analyzed to gain a better understanding of their engagement with the course. The country with the highest number of learners who completed the course was the UK, with 26 learners, which represents 0.24% of all learners from the UK. The country with the highest completion rate was Cambodia with 4.2%, which was one of their 24 learners. 
 ![](H:/Documents/FutureLearn/graphs/BarChartofCompletion.png)
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+It was found that the number of learners who completed the course was quite low, with only 0.15% of learners completing it. Therefore, engagement was also analysed. It was observed that 40.2% of learners engaged with the course after enrolment, resulting in a considerably larger dataset when analyzing engagement rather than completion.
+&nbsp;&nbsp;&nbsp;&nbsp;
+A scatter plot was created for both engagement in the course and completing the course to determine if there was a correlation between the number of learners from a country and their completion or engagement rate. As evidenced by the first scatter plot, there is no correlation between the number of learners from a country and how many users continued to engage with the course after enrolment. 
+&nbsp;&nbsp;&nbsp;&nbsp;
+The second scatter plot shows a loose negative monotonic relationship, indicating that as the number of learners from a country increases, the percentage of learners who complete the course decreases. Of the 20 countries that had a learner complete the course, 16 of those countries only had one user complete the course. Therefore, the quality and quantity of the data is insufficient to draw any conclusions.
+
+![](H:/Documents/FutureLearn/graphs/scatter_plot_of_completion.png)
+![](H:/Documents/FutureLearn/graphs/scatter_plot_of_engagement.png)
 
 ## Review Process
 ## Determine next steps
