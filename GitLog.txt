@@ -1,0 +1,229 @@
+commit 3946ad8f05f4330f76b7832aefb8d736e545789b
+Merge: b753d8d b009116
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Wed Nov 15 13:38:45 2023 +0000
+
+    Merge branch 'main' of https://github.com/matt-t251/FutureLearn
+
+commit b753d8d5aaa602d6d6f6b4caab7eee4f06caae38
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Wed Nov 15 13:38:35 2023 +0000
+
+    V 1.0
+    
+    - report finalised
+    - graphs added
+
+commit b0091167cd14f700c85754bba191d28657530131
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Wed Nov 15 11:42:49 2023 +0000
+
+    Update README.md
+
+commit da525e104a75d9996cee76762593dfebee64586d
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Wed Nov 15 11:42:05 2023 +0000
+
+    Update README.md
+
+commit 75a3febd6a60cdcb962a94cc0950d29ea695723d
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Wed Nov 15 11:40:37 2023 +0000
+
+    Update README.md
+
+commit b2ecea3f971887d70385c8eb5e0292342f3ca4be
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Wed Nov 15 11:35:46 2023 +0000
+
+    removed excess files and added README
+
+commit 7692b48b55b5d24cf379727d4763f41ffc566402
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Wed Nov 15 09:51:19 2023 +0000
+
+    report finalised
+
+commit 6574f2212ad6e2d1631b55952a734e44c7247e49
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Tue Nov 14 13:28:58 2023 +0000
+
+    scatter plot for engagement
+
+commit e08217c2f06b74d1410fefd048fcb4415eb670b0
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Mon Nov 13 17:58:19 2023 +0000
+
+    report - success criteria
+
+commit 28b0f8789ac6d27d3c0ea09dcf69ad9df71bb3b9
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Mon Nov 13 17:55:29 2023 +0000
+
+    scatter by completion (fixed)
+
+commit 3ce97d96959f24b5390a9def05960d06c3c124a1
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Mon Nov 13 17:53:46 2023 +0000
+
+    scatter by completion
+
+commit 52c1ffe7709f51fa794e693d2bdd1fa734003395
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Fri Nov 10 15:45:14 2023 +0000
+
+    -
+
+commit eed308392e10ace2da6bfef2e30e4ceb2c4c57c6
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Fri Nov 10 15:44:51 2023 +0000
+
+    report update
+
+commit 8af7b32a9bd43a9a7c1c24e846f8fa6de77dbda8
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Fri Nov 10 15:44:37 2023 +0000
+
+    added scatter
+
+commit 87d6cd96d397d2cf58461ee64972e6a3d065206e
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Fri Nov 10 15:44:09 2023 +0000
+
+    munge 1-B
+
+commit 25fd460ac77265ec7b24fe74ff8812d4020beada
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Thu Nov 9 17:46:10 2023 +0000
+
+    adding in line
+
+commit 47a94ad14e42560afe1a1d11af8de77a502ececf
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Thu Nov 9 17:19:53 2023 +0000
+
+    added calcs for tables
+
+commit 8d3a84dd6a5ca8c7e77d8f81060095033171ce91
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Thu Nov 9 16:38:57 2023 +0000
+
+    Update Analysis_Report.Rmd
+
+commit 948a4259cd6699e43ddf4b9bd244a60f8b755d06
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Thu Nov 9 16:12:29 2023 +0000
+
+    data prep
+
+commit aabb531b9ac36180a8e2e1ba47d6c3482a106e53
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Thu Nov 9 11:57:36 2023 +0000
+
+    report - data prep finished
+
+commit c2bbcc4016a81f9921037ae0c3585958bfca91fc
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Thu Nov 9 11:40:24 2023 +0000
+
+    report - data understanding finished
+
+commit ddd837b0b8302b2fc4251f9c68ed262221d79475
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Tue Nov 7 17:31:57 2023 +0000
+
+    report - access situation
+
+commit fd98644e84c86bcb8a880dfd1767635f5b04a5e4
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Tue Nov 7 16:31:10 2023 +0000
+
+    create format of report
+
+commit 063a3d095ae8855d38864265cd93baeed56f7913
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Tue Nov 7 14:52:52 2023 +0000
+
+    added conditional to prevent re-compiling data frames
+
+commit c78956ceb8c68ec51119b36b2ab7f9ecf2058478
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Tue Nov 7 14:30:33 2023 +0000
+
+    refactor and comment
+
+commit 501d458efb15d28a18791a922fd02a9ae1904f57
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Tue Nov 7 13:29:53 2023 +0000
+
+    Create completion.R
+
+commit 06bf66122b7a9b8ac229d22f9e00f17173c3f148
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Mon Nov 6 17:25:27 2023 +0000
+
+    Create 02-A.R
+    
+    created munch for second cycle
+
+commit 2a73f6f9cc072ec7ca11817c1a2684fef70aa485
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Mon Nov 6 13:34:04 2023 +0000
+
+    Update Analysis Report.Rmd
+    
+    added chart through MD syntax
+
+commit 56257999fdc63db420b81795108627c15aeb6219
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Mon Nov 6 13:33:17 2023 +0000
+
+    refactor
+
+commit 22c943bd57ccb45593e1d5e3497232eff7a5dac4
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Fri Nov 3 14:11:22 2023 +0000
+
+    verify country
+
+commit 8392e0a046fd4cebd937389ee09d65e0c86054c8
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Fri Nov 3 12:17:43 2023 +0000
+
+    fixed gitignore
+
+commit c1447e8ae2a83e841fc083094f2180e2da26c6d6
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Fri Nov 3 12:12:26 2023 +0000
+
+    Update .gitignore.txt
+
+commit c8c76ddb4e5edc705a9ed978c2b48801116bcb4a
+Author: Matthew Taylor <mattdt251@gmail.com>
+Date:   Fri Nov 3 12:09:18 2023 +0000
+
+    add gitignore
+
+commit b4f72b545bd3eeb2139c73d0273599a8a8b8ae10
+Author: Matthew Taylor (PGT) <c3074667@newcastle.ac.uk>
+Date:   Wed Nov 1 15:18:40 2023 +0000
+
+    added plot to markdown
+
+commit ce42ad9d09243736c593795ef5acf3fb786370e6
+Author: Matthew Taylor (PGT) <c3074667@newcastle.ac.uk>
+Date:   Wed Nov 1 12:01:06 2023 +0000
+
+    munge compleate
+
+commit 5017395c9b04f670b8e843b01d0ea6e8ed979763
+Author: Matthew Taylor (PGT) <c3074667@newcastle.ac.uk>
+Date:   Mon Oct 30 14:47:57 2023 +0000
+
+    added source data
+
+commit 5277aebf66506ba1e2c8fafb2377ddef8cb84788
+Author: Matthew Taylor (PGT) <c3074667@newcastle.ac.uk>
+Date:   Mon Oct 30 14:41:56 2023 +0000
+
+    init commit

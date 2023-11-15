@@ -23,7 +23,7 @@ df_for_scattergraph <- df_country
 # change country code to name
 # df_for_scattergraph$country <- countrycode(sourcevar = df_for_scattergraph$country, origin = "iso2c", destination = "country.name")
 
-scatter_plot <- ggplot(df_for_scattergraph, aes(x = count, y = engagement_percent,)) +
+scatter_plot <- ggplot(df_for_scattergraph, aes(x = engagement_percent, y = count,)) +
   geom_point() +
   labs(title = "Scatter plot of percentage of learners who engaged in the course \n vs. total learners from a country",
        x = "Percentage of learners who engaged in the course (%)",
