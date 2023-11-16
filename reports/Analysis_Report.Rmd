@@ -115,7 +115,7 @@ During the exploration, the data on the country of the learners was initially ex
 ## Verify Data Quality
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-The accuracy of a learner's reported country was assumed to be sufficiently accurate, given that it was automatically collected upon enrollment. To test this assumption, a comparison was made between the reported country and the detected country of learners who reported their country. The analysis revealed that 6.07% of learners who reported their country, provided a different country from the one detected. As a result, it is assumed that the detected country parameter has an accuracy rate exceeding 93%. Factors, such as a learner's use of a VPN or reporting their home nation while residing abroad, could be deemed to influence the accuracy of either parameter. 
+The accuracy of a learner's reported country was assumed to be sufficiently accurate, given that it was automatically collected upon enrolment. To test this assumption, a comparison was made between the reported country and the detected country of learners who reported their country. The analysis revealed that 6.07% of learners who reported their country, provided a different country from the one detected. As a result, it is assumed that the detected country parameter has an accuracy rate exceeding 93%. Factors, such as a learner's use of a VPN or reporting their home nation while residing abroad, could be deemed to influence the accuracy of either parameter. 
 
 \pagebreak
 
@@ -123,8 +123,7 @@ The accuracy of a learner's reported country was assumed to be sufficiently accu
 ## Select Data
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-As I found the accuracy of the reported country to be greater than 93%, and there are over 35 thousand learners whose country was detected, I chose to use that parameter over the reported country as only `r country_reported` learners reported their country, giving a larger data set to work from. I also needed to work with the progress data from the step files provided as well as the learner IDs from each of the files to connect a learner’s country and engagement. 
-
+The accuracy in the identification of reported countries among the 35,000 learners exceeded 93%. Consequently, this parameter over the self-reported country was used, considering that only `r country_reported` learners provided such information. This decision was driven by the desire to work with a more substantial data set for the analysis. Additionally, the investigation required the integration of progress data from the supplied step files along with learner IDs from each file to connect a learner's country and their level of engagement.
 
 ## Clean Data
 
@@ -138,8 +137,9 @@ For the second round of CRISP-DM analysis, the geographic data from the first ro
 
 \pagebreak
 
-# Evaluation
-## Evaluation of the First Round
+
+# Modeling and Evaluation
+## Modeling and Evaluation of the First Round
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 In the first cycle of the CRISP-DM analysis, an investigation was conducted into the countries where the learners were detected. Based on the pie chart, the majority of learners were located in Europe, with Asia and the Americas following in second and third place, respectively. The bar chart below provides a closer look at individual countries. It is observed that the UK had the vast majority of learners, with India and the United States following in second and third place, respectively. 
@@ -150,18 +150,18 @@ In the first cycle of the CRISP-DM analysis, an investigation was conducted into
 
 \pagebreak
 
-## Evaluation of the Second Round
+## Modeling and Evaluation of the Second Round
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 For the second cycle of the CRISP-DM analysis, the number of learners who completed the course from each country was analyzed to gain a better understanding of their engagement with the course. The country with the highest number of learners who completed the course was the UK, with 26 learners, which represents 0.24% of all learners from the UK. The country with the highest completion rate was Cambodia with 4.2%, which was one of their 24 learners. 
 
 ![](H:/Documents/FutureLearn/graphs/BarChartofCompletion.png){ width=500px height=333px }
 
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 
 It was found that the number of learners who completed the course was quite low, with only 0.15% of learners completing it. Therefore, engagement was also analysed. It was observed that 40.2% of learners engaged with the course after enrolment, resulting in a considerably larger data set when analyzing engagement rather than completion.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-This bar chart shows the perentage of learners who engaged in the course from the top 20 countries. 
+This bar chart shows the percentage of learners who engaged in the course from the top 20 countries. 
 
 ![](H:/Documents/FutureLearn/graphs/BarChartofEngagement.png){ width=500px height=333px }
 
@@ -179,13 +179,25 @@ The second scatter plot, there is no correlation between the number of learners 
 
 \pagebreak
 
+## Next Steps
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+Following this report, the stakeholders will need to decide on the next steps. While the first round of analysis successfully met its objective of providing the geographic demographics of the learners, which the stakeholders can action upon. The second round was inconclusive due to the limited data of learners who completed the course, and no correlation between number of users in a country, and their engagement. Further analysis could be beneficial, pulling in additional data points, like testing for a correlation between declaring their demographic data and engagement. If the course is run again in the future, there should be consideration into making the learners declaring their demographic data mandatory as those fields only had a response rate of around 10%. 
+
+
+# Deployment
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+The last process in the CRISP-DM framework is for the analysis to be deployed. The aim of this analysis was to share the geographic insight into the learners to the stakeholders, which was the goal of this report. The report included all the data that was available at the time of publishing, and as the course ceased in 2018, there was no attempt in the structure of the analysis to include future data. Although in practical turns it would be simple to modify the munging process to append future rounds of data as long as it was structured the same way as previous rounds. Analytical scripts that follow the munging process were sufficiently generalised that additional data points would still be processed. 
+
 # Conclusion
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-In Conclusion, this report shows the countries with the most number of enroled learners, and the countries with the highest percentage of learners who engaged or completed the course. The evaluation was not able to find a correlation between the chosen parameters, so conclusions can't be drawn about the number of learners in a country, and their engagement or completion rate. The number of learners per country, which was the aim of the first round of CRISP-DM analysis, did successfully find where most of the learners resided, and could provide valuable insight into the languages and cultures of the user base. 
+In Conclusion, this report shows the countries with the greatest number of enroled learners, and the countries with the highest percentage of learners who engaged or completed the course. The evaluation was not able to find a correlation between the chosen parameters, so conclusions can't be drawn about the number of learners in a country, and their engagement or completion rate. The number of learners per country, which was the aim of the first round of CRISP-DM analysis, did successfully find where most of the learners resided, and could provide valuable insight into the languages and cultures of the user base. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-The second round of CRISP-DM analysis was applied with the creation of the two scatter plots. The scatter plots had the opportunity to show if there was a correlation between the number of learners from a country and the engagement or completion rate. There was no correlation in the completion rate, and there was not enough data to generate the second scatter plot to draw any conclusions.
+The second round of CRISP-DM analysis was applied with the creation of the two scatter plots. The scatter plots had the opportunity to show if there was a correlation between the number of learners from a country and the engagement or completion rate. There was no correlation in the engagement rate, and there was not enough data to generate the second scatter plot to draw any conclusions.
+
 
 \pagebreak
 
